@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" src="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" href="script.js"></script>
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <main id="conteiner">
+        <section id="img">
+            <img src="img_pt.svg" alt="imagem">
+        </section>
+        <section id="calculator">
+            <form id="form">
+                <h1 id="title">
+                    Calculadora - IMC
+                </h1>
+                <div class="input-box">
+                    <label for="weight">
+                        Peso em Kg
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        <input type="number" id="weight" required>
+                        <span>
+                            Kg
+                        </span>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="height">
+                        Altura em metros
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-ruler"></i>
+                        <input type="number" id="height" required>
+                        <span>
+                            m
+                        </span>
+                    </div>
+                </div>
+                <button id="calculate" onclick="click">
+                    calcular
+                </button>
+                <div id="infos" class="hidden">
+                    <div id="result">
+                        <div id="bmi">
+                            <span id="valor"></span>
+                            <span>Seu IMC</span>
+                        </div>
+                        <div id="description">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div id="more_info">
+                        <a href="https://www.bing.com/ck/a?!&&p=bd6e64478f600e98JmltdHM9MTY4NDg4NjQwMCZpZ3VpZD0wZGYwNjg4Ny04YWZmLTY1ZGQtMTVhZi03YTUzOGJhODY0YjAmaW5zaWQ9NTQ4Nw&ptn=3&hsh=3&fclid=0df06887-8aff-65dd-15af-7a538ba864b0&psq=tudo+sobre+IMC&u=a1aHR0cHM6Ly93d3cudHVhc2F1ZGUuY29tL2NhbGN1bGFkb3JhL2ltYy8&ntb=1" target="
+                        ">
+                            Mais informações sobre o IMC
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                       
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
