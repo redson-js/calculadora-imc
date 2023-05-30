@@ -36,17 +36,17 @@ document.addEventListener('DOMContentLoaded', function() {
     // Função para obter a descrição do IMC
     function getBmiDescription(bmi) {
         if (bmi < 18.5) {
-          return 'Abaixo do peso';
+          return 'Abaixo do peso. Recomenda-se adotar hábitos mais saudáveis. para alcançar o peso normal.';
         } else if (bmi < 25) {
-          return 'Peso normal';
+          return 'Peso normal. Continue mantendo um estilo de vida saudável.';
         } else if (bmi < 30) {
-          return 'Sobrepeso';
+          return 'Sobrepeso . Recomenda-se adotar hábitos mais saudáveis.';
         } else if (bmi < 35) {
-          return 'Obesidade grau I';
+          return 'Obesidade grau I. Recomenda-se buscar orientação médica. ';
         } else if (bmi < 40) {
-          return 'Obesidade grau II';
+          return 'Obesidade grau II. É importante buscar orientação médica.';
         } else {
-          return 'Obesidade grau III';
+          return 'Obesidade grau III. É fundamental buscar ajuda médica imediatamente.';
         }
       }
-    });
+    })
